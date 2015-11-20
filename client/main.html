@@ -1,8 +1,16 @@
 <div ng-controller="PoopsListCtrl">
+  <form>
+    <label>Title</label>
+    <input ng-model="newPoop.title">
+    <label>Description</label>
+    <input ng-model="newPoop.description">
+    <button ng-click="poops.push(newPoop); newPoop='';">Add</button>
+  </form>
   <ul>
     <li ng-repeat="poop in poops">
       {{poop.title}}
       <p>{{poop.description}}</p>
+      <button ng-click="remove(poop)">X</button>
     </li>
   </ul>
 </div>
