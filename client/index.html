@@ -1,3 +1,14 @@
-<body ng-app="poopsquare">
-  <div ng-include="'client/main.html'"></div>
+<head>
+  <base href="/">
+</head>
+<body>
+
+<div ng-app="poopsquare" ng-strict-di="">
+  <h1>
+    <a href="/poops">Home</a>
+  </h1>
+
+  <div ui-view></div>
+</div>
+
 </body>
