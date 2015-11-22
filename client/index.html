@@ -3,10 +3,9 @@
 </head>
 <body>
 
-<div ng-app="poopsquare" ng-strict-di="">
-  <h1>
-    <a href="/poops">Home</a>
-  </h1>
+<div>
+  <div ng-include="'client/layouts/navbar.html'"></div>
+  <login-buttons></login-buttons>
 
   <div ui-view></div>
 </div>
